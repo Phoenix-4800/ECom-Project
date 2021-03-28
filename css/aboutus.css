@@ -1,0 +1,40 @@
+body{
+    background: rgb(34, 33, 33);
+    margin-left: 20px;
+    outline: white;
+    font-size: 2vw;
+
+}
+#abthead
+{   
+    text-align: center;
+    text-decoration: underline;
+    font : 2em bold Arial ;
+    color: rgb(6, 117, 245);
+}
+
+.des
+{   padding: 2em;
+    text-align: justify;
+    color: rgb(8, 255, 202);
+    
+}
+#toolsimg
+{   
+    height: 15em;
+    width: 20em;
+    /* padding: 2em; */
+    box-shadow: 1px 2px 10px 5px  rgba(124, 114, 114, 0.37); 
+}
+.box
+{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1
+{
+    text-shadow: 1px 1px 2px rgb(93, 2, 240);
+}
