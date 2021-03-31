@@ -1,0 +1,16 @@
+body{
+    background: rgb(34, 33, 33);
+    margin-left: 20px;
+    outline: white;
+    font-size: 2vw;
+    /* overflow: hidden; */
+}
+
+h1{ 
+    padding-top: 2cm;
+    color: rgb(202, 24, 143);
+    text-shadow: 1px 1px 2px yellow;
+    text-align: center;
+}
+
+
