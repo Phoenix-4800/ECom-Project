@@ -1,7 +1,27 @@
 body{
-    background: rgb(34, 33, 33);
+    background-color: rgb(34, 33, 33);
     margin-left: 20px;
     outline: white;
     font-family:sans-serif;
-
 }
+h1{
+    color: rgb(202, 24, 143);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.ware-map{
+    color: rgb(202, 24, 143);
+    text-transform: capitalize;
+}
+
+.whole-map{
+    color: rgb(202, 24, 143);
+    text-transform: capitalize;
+}
+
+.shop-map{
+    color: rgb(202, 24, 143);
+    text-transform: capitalize;
+}
+
