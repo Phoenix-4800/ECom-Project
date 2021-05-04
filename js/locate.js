@@ -16,3 +16,4 @@ function retail() {
     window.open('https://www.google.com/maps/place/Caranzalem,+Taleigao,+Goa/@15.4674463,73.8092525,15z/data=!3m1!4b1!4m5!3m4!1s0x3bbfc0d1d23283c5:0xad06f34021c3b573!8m2!3d15.4726075!4d73.8154394')
 
 }
+

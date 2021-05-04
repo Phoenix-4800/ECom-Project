@@ -4,6 +4,7 @@ body{
     outline: white;
     font-family:sans-serif;
 }
+
 h1{
     color: rgb(202, 24, 143);
     text-align: center;
@@ -25,3 +26,11 @@ h1{
     text-transform: capitalize;
 }
 
+img:hover{
+    cursor:pointer;
+}
+
+a{
+    font-size:2vw;
+
+}
