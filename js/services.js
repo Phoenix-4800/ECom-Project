@@ -44,3 +44,29 @@ $("document").ready(function () {
     console.log(a);
   });
 });
+
+// For the live search using ajax
+let inp = document.getElementById('inp');
+inp.addEventListener('keyup' ,dispRes);
+
+function dispRes(){
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET' , '/json/services.json' , true );
+  xhr.onload = function(){
+    if (this.status === 200) {
+      let str = '';
+      let searchIp = inp.value;
+      let expression = new RegExp(searchIp , 'i');
+      let obj = JSON.parse(this.responseText);
+      
+      $.each(obj, (key, value)=> {
+        let list = document.getElementById('resList');
+        if (value.name.search(expression) != -1) {
+          str += `<li><img src=${obj[key].img}><a href=${obj[key].link}>${obj[key].name}</a></li><br>`;
+          list.innerHTML = str;
+        }
+      });
+    }
+  }
+  xhr.send();
+}

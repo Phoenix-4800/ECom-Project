@@ -67,13 +67,15 @@ a:hover{
 }
 
 #inp{
-    color:white;
+    /* color:black; */
     height: 30px;
     width: 80%;
     font-size: larger;
     border: transparent;
-    border-radius: 100px;
+    border-radius: 20px;
+    outline: none;
 }
+
 
 
 .searchBtn{
@@ -82,6 +84,7 @@ a:hover{
     border-radius: 50%;
     background: transparent;
     border: transparent;
+    width: 30px;
 }
 
 li ,button, .grinder,.safety,.firClean,.highPressure,.secClean,.drill:hover{
