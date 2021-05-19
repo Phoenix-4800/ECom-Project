@@ -62,7 +62,7 @@ function dispRes(){
       $.each(obj, (key, value)=> {
         let list = document.getElementById('resList');
         if (value.name.search(expression) != -1) {
-          str += `<li><img src=${obj[key].img}><a href=${obj[key].link}>${obj[key].name}</a></li><br>`;
+          str += `<li><img src=${obj[key].img} style = "height:20px; width:20px;"><a href=${obj[key].link}>${obj[key].name}</a></li><br>`;
           list.innerHTML = str;
         }
       });

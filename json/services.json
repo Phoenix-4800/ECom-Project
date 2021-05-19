@@ -1,18 +1,22 @@
 [
   {
     "name": "Power Tools",
-    "link": "powerTools.html"
+    "link": "powerTools.html",
+    "img" : "https://images.pexels.com/photos/46793/taps-thread-drill-milling-46793.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
   },
   {
     "name": "Power Washers",
-    "link": "powerWashers.html"
+    "link": "powerWashers.html",
+    "img" : "https://thumbs.dreamstime.com/b/pressure-washer-high-power-cleaning-equipment-60735347.jpg"
   },
   {
     "name": "Safety Equipment",
-    "link": "safetyEquipment.html"
+    "link": "safetyEquipment.html",
+    "img" : "https://thumbs.dreamstime.com/b/composition-different-safety-equipment-composition-different-safety-equipment-table-138691009.jpg"
   },
   {
     "name": "Cleaners",
-    "link": "cleaners.html"
+    "link": "cleaners.html",
+    "img" : "https://images.pexels.com/photos/5217913/pexels-photo-5217913.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
   }
 ]
