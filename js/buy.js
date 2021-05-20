@@ -5,17 +5,17 @@ $('.drillBuy').click(()=>{
         <br>
         <form method = "post" action = "http://localhost:8080/Inventory-Management/php/drill.php">
         <label>Quantity : </label>
-        <input type = "number" name="quantity"><br><br>
+        <input type = "number" name="quantity"  required><br><br>
         <label>Name : </label>
-        <input type = "text" name="name"><br><br>
+        <input type = "text" name="name" required><br><br>
         <label>Address : </label>
-        <textarea cols="22" rows = "2" name = "address"></textarea><br><br>
+        <textarea cols="22" rows = "2" name = "address" required></textarea><br><br>
         <label>Pin : </label>
-        <input type = "number" name="pin"><br><br>
+        <input type = "number" name="pin" required><br><br>
         <label>Mobile : </label>
-        <input type = "number" name="mobile"><br><br>
+        <input type = "number" name="mobile" required><br><br>
         <label>Email : </label>
-        <input type = "email" name="email"><br><br>
+        <input type = "email" name="email" required><br><br>
         <button type = "submit"  style=" width:100px; " name = "buyDrillFinal" class = "buyDrillFinal"  >BUY</button>
         </form>
     `;
@@ -30,17 +30,17 @@ $('.grinderbtn').click(()=>{
         <br>
         <form method = "post" action = "http://localhost:8080/Inventory-Management/php/grinder.php">
         <label>Quantity : </label>
-        <input type = "number" name="quantity"><br><br>
+        <input type = "number" name="quantity" required><br><br>
         <label>Name : </label>
         <input type = "text" name="name"><br><br>
         <label>Address : </label>
-        <textarea cols="22" rows = "2" name = "address"></textarea><br><br>
+        <textarea cols="22" rows = "2" name = "address" required></textarea><br><br>
         <label>Pin : </label>
-        <input type = "number" name="pin"><br><br>
+        <input type = "number" name="pin" required><br><br>
         <label>Mobile : </label>
-        <input type = "number" name="mobile"><br><br>
+        <input type = "number" name="mobile" required><br><br>
         <label>Email : </label>
-        <input type = "email" name="email"><br><br>
+        <input type = "email" name="email" required><br><br>
         <button type = "submit"  style=" width:100px; " name = "buyDrillFinal" class = "buyDrillFinal"  >BUY</button>
         </form>
     `;
@@ -56,17 +56,17 @@ $('.pressure').click(()=>{
         <br>
         <form method = "post" action = "http://localhost:8080/Inventory-Management/php/pressure.php">
         <label>Quantity : </label>
-        <input type = "number" name="quantity"><br><br>
+        <input type = "number" name="quantity" required><br><br>
         <label>Name : </label>
-        <input type = "text" name="name"><br><br>
+        <input type = "text" name="name" required><br><br>
         <label>Address : </label>
-        <textarea cols="22" rows = "2" name = "address"></textarea><br><br>
+        <textarea cols="22" rows = "2" name = "address" required></textarea><br><br>
         <label>Pin : </label>
-        <input type = "number" name="pin"><br><br>
+        <input type = "number" name="pin" required><br><br>
         <label>Mobile : </label>
-        <input type = "number" name="mobile"><br><br>
+        <input type = "number" name="mobile" required><br><br>
         <label>Email : </label>
-        <input type = "email" name="email"><br><br>
+        <input type = "email" name="email" required><br><br>
         <button type = "submit"  style=" width:100px; " name = "buyDrillFinal" class = "buyDrillFinal"  >BUY</button>
         </form>
     `;
@@ -82,17 +82,17 @@ $('.safe').click(()=>{
         <br>
         <form method = "post" action = "http://localhost:8080/Inventory-Management/php/safe.php">
         <label>Quantity : </label>
-        <input type = "number" name="quantity"><br><br>
+        <input type = "number" name="quantity" required><br><br>
         <label>Name : </label>
-        <input type = "text" name="name"><br><br>
+        <input type = "text" name="name" required><br><br>
         <label>Address : </label>
-        <textarea cols="22" rows = "2" name = "address"></textarea><br><br>
+        <textarea cols="22" rows = "2" name = "address" required></textarea><br><br>
         <label>Pin : </label>
-        <input type = "number" name="pin"><br><br>
+        <input type = "number" name="pin" required><br><br>
         <label>Mobile : </label>
-        <input type = "number" name="mobile"><br><br>
+        <input type = "number" name="mobile" required><br><br>
         <label>Email : </label>
-        <input type = "email" name="email"><br><br>
+        <input type = "email" name="email" required><br><br>
         <button type = "submit"  style=" width:100px; " name = "buyDrillFinal" class = "buyDrillFinal"  >BUY</button>
         </form>
     `;
@@ -106,17 +106,17 @@ $('.firclean').click(()=>{
         <br>
         <form method = "post" action = "http://localhost:8080/Inventory-Management/php/firclean.php">
         <label>Quantity : </label>
-        <input type = "number" name="quantity"><br><br>
+        <input type = "number" name="quantity" required><br><br>
         <label>Name : </label>
-        <input type = "text" name="name"><br><br>
+        <input type = "text" name="name" required><br><br>
         <label>Address : </label>
-        <textarea cols="22" rows = "2" name = "address"></textarea><br><br>
+        <textarea cols="22" rows = "2" name = "address" required></textarea><br><br>
         <label>Pin : </label>
-        <input type = "number" name="pin"><br><br>
+        <input type = "number" name="pin" required><br><br>
         <label>Mobile : </label>
-        <input type = "number" name="mobile"><br><br>
+        <input type = "number" name="mobile" required><br><br>
         <label>Email : </label>
-        <input type = "email" name="email"><br><br>
+        <input type = "email" name="email" required><br><br>
         <button type = "submit"  style=" width:100px; " name = "buyDrillFinal" class = "buyDrillFinal"  >BUY</button>
         </form>
     `;
@@ -131,17 +131,17 @@ $('.secCleanbtn').click(()=>{
         <br>
         <form method = "post" action = "http://localhost:8080/Inventory-Management/php/secClean.php">
         <label>Quantity : </label>
-        <input type = "number" name="quantity"><br><br>
+        <input type = "number" name="quantity" required><br><br>
         <label>Name : </label>
-        <input type = "text" name="name"><br><br>
+        <input type = "text" name="name" required><br><br>
         <label>Address : </label>
-        <textarea cols="22" rows = "2" name = "address"></textarea><br><br>
+        <textarea cols="22" rows = "2" name = "address" required></textarea><br><br>
         <label>Pin : </label>
-        <input type = "number" name="pin"><br><br>
+        <input type = "number" name="pin" required><br><br>
         <label>Mobile : </label>
-        <input type = "number" name="mobile"><br><br>
+        <input type = "number" name="mobile" required><br><br>
         <label>Email : </label>
-        <input type = "email" name="email"><br><br>
+        <input type = "email" name="email" required><br><br>
         <button type = "submit"  style=" width:100px; " name = "buyDrillFinal" class = "buyDrillFinal"  >BUY</button>
         </form>
     `;
