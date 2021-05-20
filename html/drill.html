@@ -11,7 +11,6 @@
     <div class="hammerDrill">
         <img
           class="drill"  
-          onclick="buy()"
           src="/images/bosh gbh 2-26 re rotary hammer.jfif"
           alt="rotary hammer"
         /><!--image1-->
@@ -21,8 +20,14 @@
         </p>
         <p>Price : Rs. 12,350.00</p>
       </div>
-      <button>BUY</button>
-</body>
+      <div class="buyDrill">
+        <button class="drillBuy" >BUY</button>
+      </div>
+      <div class="drillDeets">
+
+      </div>
+    </body>
+    
 <style>
   
 button{
@@ -34,5 +39,11 @@ button{
 button:hover{
   cursor:pointer;
 }
+form{
+  display: inline-block;
+  text-align: right;
+}
 </style>
+<script src="/jquery-3.6.0.min.js"></script>
+<script src="/js/buy.js"></script>
 </html>
