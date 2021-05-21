@@ -32,13 +32,17 @@ $("document").ready(function () {
       window.open("/html/cleaners.html");
     } else {
       let template = `
-            <a style = "color:teal;" href="/html/powerTools.html">Power tools</a><br>
-            <a style = "color:teal;" href="/html/powerWashers.html">Power Washers</a><br>
-            <a style = "color:teal;" href="/html/safetyEquipment.html">Safety  Equipment</a><br>
-            <a style = "color:teal;" href="/html/cleaners.html">Cleaners</a><br>
-
+            <div class="temp" >
+            <span>No results .. Did you mean </span> <br>
+            <a class="templ" href="/html/powerTools.html">Power tools</a><br>
+            <a class="templ" href="/html/powerWashers.html">Power Washers</a><br>
+            <a class="templ" href="/html/safetyEquipment.html">Safety  Equipment</a><br>
+            <a class="templ" href="/html/cleaners.html">Cleaners</a><br>
+            </div>
             `;
-      $("h3").html("Did not find any results.....Did you mean<br>" + template);
+      // $("h3").html("Did not find any results.....Did you mean<br>" + template);
+      // $('h3').fadeOut(10000);
+      $("h3").html(template);
       $('h3').fadeOut(10000);
     }
     console.log(a);

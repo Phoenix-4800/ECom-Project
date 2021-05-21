@@ -3,7 +3,10 @@
   <head>
     <link rel="stylesheet" href="/css/Services.css" />
     <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Services</title>
   </head>
   <body>
@@ -18,19 +21,23 @@
     </div>
 
     <div class="search">
-      <input
-        type="text"
-        id="inp"
-        placeholder="Search for your needs"
-        class="search-txt"
-      />
-      
-      <button class="searchBtn"><i class="fa fa-search"></i></button>
+      <div id="stext">
+        <input
+          type="text"
+          id="inp"
+          placeholder="Search for your needs"
+          class="search-txt"
+        />
+      </div>
+      <div>
+        <button class="searchBtn"><i class="fa fa-search"></i></button>
+      </div>
     </div>
-    <ul id="resList">
-    </ul>
-    <h3 style="color:red"></h3>
 
+    <ul id="resList"></ul>
+    <h3 style="color: red"></h3>
+
+    
     <div class="power-tools">
       <!--topic 1-->
       <h1>Power Tools</h1>
@@ -39,12 +46,12 @@
 
       <div class="hammerDrill">
         <img
-          class="drill"  
+          class="drill"
           onclick="buy('drill')"
           src="/images/bosh gbh 2-26 re rotary hammer.jfif"
           alt="rotary hammer"
         /><!--image1-->
-        <p class="drill"  onclick="buy('drill')">
+        <p class="drill" onclick="buy('drill')">
           <!--desc-->
           BOSCH GBH 2-26 RE ROTARY HAMMER
         </p>
@@ -52,7 +59,9 @@
       </div>
 
       <div class="angleGrinder">
-        <img  class="grinder" onclick="buy('grinder')"
+        <img
+          class="grinder"
+          onclick="buy('grinder')"
           src="/images/bosch gws 2000 angle grinder.jfif"
           alt="angle grinder"
         /><!--image2-->
@@ -66,20 +75,26 @@
 
     <!--topic2-->
     <div class="pw">
-      <h1 >Power Washers</h1>
+      <h1>Power Washers</h1>
       <!--add images and desc-->
-      <img  class="highPressure"  onclick="buy('highPressure')"
+      <img
+        class="highPressure"
+        onclick="buy('highPressure')"
         src="/images/karcher high pressure washer k5.jfif"
         alt="pressure washer"
       /><!--image1-->
-      <p class="highPressure" onclick="buy('highPressure')"><!--desc-->KARCHER HIGH PRESSURE WASHER K5</p>
+      <p class="highPressure" onclick="buy('highPressure')">
+        <!--desc-->KARCHER HIGH PRESSURE WASHER K5
+      </p>
       <p>Price : Rs. 35,500.00</p>
     </div>
 
     <div class="se">
       <h1>Safety Equipment</h1>
       <!--add pic and desc-->
-      <img  class="safety" onclick="buy('safety')"
+      <img
+        class="safety"
+        onclick="buy('safety')"
         src="/images/Radians Shark Industrial Professional Grade Heavy Duty Safety Glasses.jfif"
         alt="safety glasses"
       /><!--image1-->
@@ -93,26 +108,33 @@
     <div class="cln">
       <h1>Cleaners</h1>
       <!--add pic and desc-->
-      <img  class="firClean" onclick="buy('firClean')"
+      <img
+        class="firClean"
+        onclick="buy('firClean')"
         src="/images/Chemical Guys Honeydew Snow Foam Car Wash Liquid 64 Oz..jfif"
         alt="car cleaner"
       /><!--image1-->
-      <p class="firClean" onclick="buy('firClean')" ><!--desc-->Chemical Guys Honeydew Snow Foam Car Wash Liquid 64 Oz.</p>
+      <p class="firClean" onclick="buy('firClean')">
+        <!--desc-->Chemical Guys Honeydew Snow Foam Car Wash Liquid 64 Oz.
+      </p>
       <p>Price : Rs. 350.00</p>
-      <img  class="secClean"  onclick="buy('secClean')"
+      <img
+        class="secClean"
+        onclick="buy('secClean')"
         src="/images/32 oz. Tile and Stone Cleaner.jfif"
         alt="tile cleaner"
       /><!--image2-->
-      <p class="secClean" onclick="buy('secClean')" ><!--desc-->32 oz. Tile and Stone Cleaner</p>
+      <p class="secClean" onclick="buy('secClean')">
+        <!--desc-->32 oz. Tile and Stone Cleaner
+      </p>
       <p>Price : Rs. 699.00</p>
     </div>
   </body>
-  <script src="/jquery-3.6.0.min.js">
-  </script>
+  <script src="/jquery-3.6.0.min.js"></script>
   <script src="/js/services.js"></script>
   <style>
-    a{
-      font-size:2vw;
+    a {
+      font-size: 2vw;
     }
   </style>
 </html>
