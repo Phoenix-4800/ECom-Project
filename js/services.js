@@ -66,8 +66,9 @@ function dispRes(){
       $.each(obj, (key, value)=> {
         let list = document.getElementById('resList');
         if (value.name.search(expression) != -1) {
-          str += `<li><img src=${obj[key].img} style = "height:20px; width:20px;"><a href=${obj[key].link}>${obj[key].name}</a></li><br>`;
+          str += `<li class="ajlis"><img src=${obj[key].img} id="ajimgs">&nbsp&nbsp&nbsp&nbsp<a class="aaj" href=${obj[key].link}>${obj[key].name}</a></li><br>`;
           list.innerHTML = str;
+          $('.ajlis').fadeOut(10000);
         }
       });
     }

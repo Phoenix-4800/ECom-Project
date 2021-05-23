@@ -23,17 +23,18 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  block-size: 80px;
+  block-size: 4em;
+
 }
 
-a {
+.aheader {
   font-size: 2vw;
   text-transform: capitalize;
   color: rgb(236, 240, 11);
   text-decoration: none;
 }
 
-li {
+.tools {
   padding-right: 30px;
   list-style: none;
   display: inline-block;
@@ -140,5 +141,26 @@ p {
 }
 .templ:hover
 {
+  font-size: 1em;
+}
+#ajimgs
+{
+  height:22px; 
+  width:22px; 
+  border:solid 1px rgb(34, 33, 33); 
+  border-radius : 100% ;
+}
+.ajlis
+{ 
+  margin-left: 60%;
+}
+.aaj
+{
+  font-size: 1em;
+  color: white;
+}
+.aaj:hover
+{
+  font-weight: bold;
   font-size: 1em;
 }
