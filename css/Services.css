@@ -6,13 +6,6 @@ body {
   color: rgb(77, 130, 143);
 }
 
-h1 {
-  font-size: 2vw;
-  padding-top: 2cm;
-  color: rgb(202, 24, 143);
-  text-shadow: 1px 1px 2px yellow;
-  text-align: center;
-}
 
 .abt {
   margin-top: none;
@@ -45,8 +38,25 @@ a:hover {
   color: white;
 }
 
+#headline
+{ margin: 7em 0 0em 0 ;
+  width: 100%;
+  height: 5em;
+}
+
+#prhead {
+  font-size: 4vw;
+  color: rgb(202, 24, 143);
+  text-shadow: 1px 1px 2px yellow;
+  text-align:start;
+  float: left;
+}
+
+
 .search {
-  margin: 6em 2em 0em 60%;
+ width: 30em;
+ height: 2.5em;
+ margin: 1em 0 0 50em;
 }
 
 #stext {
@@ -71,7 +81,7 @@ a:hover {
   width: 2em;
   height: 2em;
   font-size: large;
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 
 .searchBtn:hover {
@@ -128,20 +138,30 @@ p {
 }
 
 .temp
+{ 
+  width: 21em;
+  background-color: rgb(65, 62, 62);
+  position: absolute;
+  border: solid 2px rgb(65, 62, 62);;
+  border-radius: 7px;
+  padding: 0.5em;
+}
+#noreslt
 { font-size: 1em;
-  margin-left: 60%;
-  width: 25em;
+  font-weight: bold;
+  margin : 2em 0 0 0.7em;
+  color: red;
 }
 .templ
 { font-size: 0.7em;
   color: bisque;
   font-weight: normal;
-  
+  padding-left: 1em;
   
 }
 .templ:hover
-{
-  font-size: 1em;
+{ font-size: 0.7em;
+  font-weight: bold;
 }
 #ajimgs
 {
@@ -163,4 +183,44 @@ p {
 {
   font-weight: bold;
   font-size: 1em;
+}
+
+h1
+{
+  font-size: 3vw;
+  color: rgb(61, 175, 175);
+  text-shadow: 1px 1px 2px rgb(41, 38, 236);
+  margin-bottom: 2em;
+}
+
+.prodcts
+{
+  height: 20em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.pimg
+{
+  float: left;
+  margin-left: 2em;
+  
+  
+}
+.img
+{
+  height: 20em;
+  width: 30em;
+  border-radius: 10px;
+}
+.pdescr
+{
+  
+  text-align: center;
+  color: rgb(179, 181, 201);
+  margin-left: 40em;
+  width: 30em;
+  height: 10em;
+  padding-top: 4em;
+  
+  
 }

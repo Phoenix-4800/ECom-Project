@@ -33,7 +33,7 @@ $("document").ready(function () {
     } else {
       let template = `
             <div class="temp" >
-            <span>No results .. Did you mean </span> <br>
+            <span id="noreslt">No results .. Did you mean </span> <br>
             <a class="templ" href="/html/powerTools.html">Power tools</a><br>
             <a class="templ" href="/html/powerWashers.html">Power Washers</a><br>
             <a class="templ" href="/html/safetyEquipment.html">Safety  Equipment</a><br>
@@ -43,7 +43,14 @@ $("document").ready(function () {
       // $("h3").html("Did not find any results.....Did you mean<br>" + template);
       // $('h3').fadeOut(10000);
       $("h3").html(template);
-      $('h3').fadeOut(10000);
+      $(window).click(function() {
+        $(".temp").hide();
+        $("#inp").val("");
+      });
+      
+      $(".search").click(function(event){
+        event.stopPropagation();
+      });
     }
     console.log(a);
   });
@@ -68,7 +75,14 @@ function dispRes(){
         if (value.name.search(expression) != -1) {
           str += `<li class="ajlis"><img src=${obj[key].img} id="ajimgs">&nbsp&nbsp&nbsp&nbsp<a class="aaj" href=${obj[key].link}>${obj[key].name}</a></li><br>`;
           list.innerHTML = str;
-          $('.ajlis').fadeOut(10000);
+          $(window).click(function() {
+            $(".ajlis").hide();
+            $("#inp").val("");
+          });
+          
+          $(".search").click(function(event){
+            event.stopPropagation();
+          });
         }
       });
     }

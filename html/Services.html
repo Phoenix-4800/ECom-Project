@@ -12,122 +12,164 @@
   <body>
     <div class="abt">
       <ul>
-        <li class="tools"><a class="aheader" href="/html/HomePage.html">home</a></li>
-        <li class="tools"><a class="aheader" href="/html/AboutUs.html">about us</a></li>
+        <li class="tools">
+          <a class="aheader" href="/html/HomePage.html">home</a>
+        </li>
+        <li class="tools">
+          <a class="aheader" href="/html/AboutUs.html">about us</a>
+        </li>
         <!-- <li class="tools"><a href="/html/Inventory.html">inventory </a></li> -->
-        <li class="tools"><a class="aheader" href="/html/Locate.html">locate us</a></li>
-        <li class="tools"><a class="aheader" href="/html/Contact.html">contact us</a></li>
+        <li class="tools">
+          <a class="aheader" href="/html/Locate.html">locate us</a>
+        </li>
+        <li class="tools">
+          <a class="aheader" href="/html/Contact.html">contact us</a>
+        </li>
       </ul>
     </div>
 
-    <div class="search">
-      <div id="stext">
-        <input
-          type="text"
-          id="inp"
-          placeholder="Search for your needs"
-          class="search-txt"
-        />
-      </div>
-      <div>
-        <button class="searchBtn"><i class="fa fa-search"></i></button>
+    <div id="headline">
+      <div id="prhead">OUR PRODUCTS</div>
+
+      <div class="search">
+        <div id="stext">
+          <input
+            type="text"
+            id="inp"
+            placeholder="Search for your needs"
+            class="search-txt"
+          />
+        </div>
+        <div>
+          <button class="searchBtn"><i class="fa fa-search"></i></button>
+        </div>
+        <ul id="resList"></ul>
+        <!-- <h3 style="color: red"></h3> -->
+        <h3></h3>
       </div>
     </div>
 
-    <ul id="resList"></ul>
-    <h3 style="color: red"></h3>
-
-    
+    <!-- Topic 1-->
     <div class="power-tools">
-      <!--topic 1-->
-      <h1>Power Tools</h1>
-
       <!--add images and desc-->
-
-      <div class="hammerDrill">
-        <img
-          class="drill"
-          onclick="buy('drill')"
-          src="/images/bosh gbh 2-26 re rotary hammer.jfif"
-          alt="rotary hammer"
-        /><!--image1-->
-        <p class="drill" onclick="buy('drill')">
-          <!--desc-->
-          BOSCH GBH 2-26 RE ROTARY HAMMER
-        </p>
-        <p>Price : Rs. 12,350.00</p>
+      <br />
+      <h1>Power Tools</h1>
+      <div class="hammerDrill prodcts">
+        <div class="pimg">
+          <img
+            class="drill img"
+            onclick="buy('drill')"
+            src="/images/bosh gbh 2-26 re rotary hammer.jfif"
+            alt="rotary hammer"
+          /><!--image1-->
+        </div>
+        <div class="pdescr">
+          <p class="drill" onclick="buy('drill')">
+            <!--desc-->
+            BOSCH GBH 2-26 RE ROTARY HAMMER <br />
+            Price : Rs. 12,350.00
+          </p>
+        </div>
       </div>
 
-      <div class="angleGrinder">
-        <img
-          class="grinder"
-          onclick="buy('grinder')"
-          src="/images/bosch gws 2000 angle grinder.jfif"
-          alt="angle grinder"
-        /><!--image2-->
-        <p class="grinder" onclick="buy('grinder')">
-          <!--desc-->
-          BOSCH GWS 2000 ANGLE GRINDER
-        </p>
-        <p>Price : Rs. 7,000.00</p>
+      <div class="angleGrinder prodcts">
+        <div class="pimg">
+          <img
+            class="grinder img"
+            onclick="buy('grinder')"
+            src="/images/bosch gws 2000 angle grinder.jfif"
+            alt="angle grinder"
+          /><!--image2-->
+        </div>
+        <div class="pdescr">
+          <p class="grinder" onclick="buy('grinder')">
+            <!--desc-->
+            BOSCH GWS 2000 ANGLE GRINDER <br />
+            Price : Rs. 7,000.00
+          </p>
+        </div>
       </div>
     </div>
 
     <!--topic2-->
-    <div class="pw">
-      <h1>Power Washers</h1>
+    <h1 >Power Washers</h1>
+    <div class="pw prodcts">
       <!--add images and desc-->
-      <img
-        class="highPressure"
-        onclick="buy('highPressure')"
-        src="/images/karcher high pressure washer k5.jfif"
-        alt="pressure washer"
-      /><!--image1-->
-      <p class="highPressure" onclick="buy('highPressure')">
-        <!--desc-->KARCHER HIGH PRESSURE WASHER K5
-      </p>
-      <p>Price : Rs. 35,500.00</p>
+      <div class="pimg">
+        <img
+          class="highPressure img"
+          onclick="buy('highPressure')"
+          src="/images/karcher high pressure washer k5.jfif"
+          alt="pressure washer"
+        /><!--image1-->
+      </div>
+      <div class="pdescr">
+        <p class="highPressure" onclick="buy('highPressure')">
+          <!--desc-->KARCHER HIGH PRESSURE WASHER K5 <br />
+          Price : Rs. 35,500.00
+        </p>
+      </div>
     </div>
 
-    <div class="se">
-      <h1>Safety Equipment</h1>
-      <!--add pic and desc-->
-      <img
-        class="safety"
-        onclick="buy('safety')"
-        src="/images/Radians Shark Industrial Professional Grade Heavy Duty Safety Glasses.jfif"
-        alt="safety glasses"
-      /><!--image1-->
-      <p class="safety" onclick="buy('safety')">
-        <!--desc-->Radians Shark Industrial Professional Grade Heavy Duty Safety
-        Glasses
-      </p>
-      <p>Price : Rs. 1,299.00</p>
+    <!--topic3-->
+    <h1 >Safety Equipment</h1>
+    <div class="se prodcts">
+      <div class="pimg">
+        <img
+          class="safety img"
+          onclick="buy('safety')"
+          src="/images/Radians Shark Industrial Professional Grade Heavy Duty Safety Glasses.jfif"
+          alt="safety glasses"
+        /><!--image1-->
+      </div>
+      <div class="pdescr">
+        <!--add pic and desc-->
+
+        <p class="safety" onclick="buy('safety')">
+          <!--desc-->Radians Shark Industrial Professional Grade Heavy Duty
+          Safety Glasses <br />
+          Price : Rs. 1,299.00
+        </p>
+      </div>
     </div>
 
+    <!-- Topic 4-->
+    <h1 >Cleaners</h1>
     <div class="cln">
-      <h1>Cleaners</h1>
-      <!--add pic and desc-->
-      <img
-        class="firClean"
-        onclick="buy('firClean')"
-        src="/images/Chemical Guys Honeydew Snow Foam Car Wash Liquid 64 Oz..jfif"
-        alt="car cleaner"
-      /><!--image1-->
-      <p class="firClean" onclick="buy('firClean')">
-        <!--desc-->Chemical Guys Honeydew Snow Foam Car Wash Liquid 64 Oz.
-      </p>
-      <p>Price : Rs. 350.00</p>
-      <img
-        class="secClean"
-        onclick="buy('secClean')"
-        src="/images/32 oz. Tile and Stone Cleaner.jfif"
-        alt="tile cleaner"
-      /><!--image2-->
-      <p class="secClean" onclick="buy('secClean')">
-        <!--desc-->32 oz. Tile and Stone Cleaner
-      </p>
-      <p>Price : Rs. 699.00</p>
+      <div class="prodcts">
+        <div class="pimg">
+          <!--add pic and desc-->
+          <img
+            class="firClean img"
+            onclick="buy('firClean')"
+            src="/images/Chemical Guys Honeydew Snow Foam Car Wash Liquid 64 Oz..jfif"
+            alt="car cleaner"
+          /><!--image1-->
+        </div>
+        <div class="pdescr">
+          <p class="firClean" onclick="buy('firClean')">
+            <!--desc-->Chemical Guys Honeydew Snow Foam Car Wash Liquid 64 Oz.
+            <br />
+            Price : Rs. 350.00
+          </p>
+        </div>
+      </div>
+      <div class="prodcts">
+        <div class="pimg">
+          <img
+            class="secClean img"
+            onclick="buy('secClean')"
+            src="/images/32 oz. Tile and Stone Cleaner.jfif"
+            alt="tile cleaner"
+          /><!--image2-->
+        </div>
+        <div class="pdescr">
+          <p class="secClean" onclick="buy('secClean')">
+            <!--desc-->32 oz. Tile and Stone Cleaner <br />
+            Price : Rs. 699.00
+          </p>
+        </div>
+      </div>
     </div>
   </body>
   <script src="/jquery-3.6.0.min.js"></script>
