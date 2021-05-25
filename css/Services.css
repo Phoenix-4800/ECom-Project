@@ -19,31 +19,29 @@ body {
   block-size: 4em;
 
 }
-
 .aheader {
   font-size: 2vw;
   text-transform: capitalize;
   color: rgb(236, 240, 11);
   text-decoration: none;
 }
-
+.aheader:hover {
+  font-size: 2.1vw;
+  color: white;
+}
 .tools {
   padding-right: 30px;
   list-style: none;
   display: inline-block;
 }
 
-a:hover {
-  font-size: 2.1vw;
-  color: white;
-}
+
 
 #headline
 { margin: 7em 0 0em 0 ;
   width: 100%;
   height: 5em;
 }
-
 #prhead {
   font-size: 4vw;
   color: rgb(202, 24, 143);
@@ -52,17 +50,14 @@ a:hover {
   float: left;
 }
 
-
 .search {
  width: 30em;
  height: 2.5em;
  margin: 1em 0 0 50em;
 }
-
 #stext {
   float: left;
 }
-
 #inp {
   background-color: rgb(76, 80, 83);
   border: solid 2px rgb(76, 80, 83);
@@ -72,7 +67,6 @@ a:hover {
   color: blanchedalmond;
   outline: none;
 }
-
 .searchBtn {
   color: antiquewhite;
   background-color: rgb(34, 33, 33);
@@ -83,14 +77,120 @@ a:hover {
   font-size: large;
   margin-left: 0.5em;
 }
-
 .searchBtn:hover {
   color: aqua;
 }
 .searchBtn:active {
   font-size: larger;
+}
+
+
+li,
+button,
+.grinder,
+.safety,
+.firClean,
+.highPressure,
+.secClean,
+.drill:hover {
+  cursor: pointer;
+}
+
+
+.ps {
+  font-size: 2vw;
+}
+
+
+#searchbx
+{
+  position:initial;
+}
+.temp , .aj
+{ 
+  width: 21em;
+  background-color: rgb(65, 62, 62);
+  border: solid 2px rgb(65, 62, 62);
+  border-radius: 7px;
+  padding: 0.5em;
+}
+#noreslt
+{ font-size: 1em;
+  font-weight: bold;
+  margin : 2em 0 0 0.7em;
+  color: red;
+}
+.templ, .aaj
+{ font-size: 0.7em;
+  color: bisque;
+  font-weight: normal;
+  padding-left: 1em;
+  text-decoration: none;
   
 }
+.templ:hover
+{ font-size: 0.9em;
+  font-weight: bolder;
+}
+.aj
+{
+  background-color: rgb(39, 37, 37);
+  border: solid 2px rgb(65, 62, 62);
+}
+#ajimgs
+{
+  height:22px; 
+  width:22px; 
+  border-radius : 100% ;
+}
+.aaj
+{ 
+  color: whitesmoke; 
+}
+.aaj:hover
+{
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+
+h1
+{ text-align: center;
+  font-size: 3vw;
+  color: rgb(61, 175, 175);
+  text-shadow: 1px 1px 2px rgb(41, 38, 236);
+  margin:2em 0 2em 0;
+}
+
+.prodcts
+{
+  height: 20em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.pimg
+{
+  float: left;
+  margin-left: 2em;
+}
+.img
+{
+  height: 20em;
+  width: 30em;
+  border-radius: 10px;
+}
+.pdescr
+{ 
+  text-align: center;
+  color: rgb(179, 181, 201);
+  margin-left: 40em;
+  width: 30em;
+  height: 10em;
+  padding-top: 4em;
+   
+}
+
+
 /* .search{
     width: 70vw;
     margin-left: 30px;
@@ -120,107 +220,3 @@ a:hover {
     border: transparent;
     width: 30px;
 } */
-
-li,
-button,
-.grinder,
-.safety,
-.firClean,
-.highPressure,
-.secClean,
-.drill:hover {
-  cursor: pointer;
-}
-
-a,
-p {
-  font-size: 2vw;
-}
-
-.temp
-{ 
-  width: 21em;
-  background-color: rgb(65, 62, 62);
-  position: absolute;
-  border: solid 2px rgb(65, 62, 62);;
-  border-radius: 7px;
-  padding: 0.5em;
-}
-#noreslt
-{ font-size: 1em;
-  font-weight: bold;
-  margin : 2em 0 0 0.7em;
-  color: red;
-}
-.templ
-{ font-size: 0.7em;
-  color: bisque;
-  font-weight: normal;
-  padding-left: 1em;
-  
-}
-.templ:hover
-{ font-size: 0.7em;
-  font-weight: bold;
-}
-#ajimgs
-{
-  height:22px; 
-  width:22px; 
-  border:solid 1px rgb(34, 33, 33); 
-  border-radius : 100% ;
-}
-.ajlis
-{ 
-  margin-left: 60%;
-}
-.aaj
-{
-  font-size: 1em;
-  color: white;
-}
-.aaj:hover
-{
-  font-weight: bold;
-  font-size: 1em;
-}
-
-h1
-{
-  font-size: 3vw;
-  color: rgb(61, 175, 175);
-  text-shadow: 1px 1px 2px rgb(41, 38, 236);
-  margin-bottom: 2em;
-}
-
-.prodcts
-{
-  height: 20em;
-  width: 100%;
-  margin-bottom: 2em;
-}
-.pimg
-{
-  float: left;
-  margin-left: 2em;
-  
-  
-}
-.img
-{
-  height: 20em;
-  width: 30em;
-  border-radius: 10px;
-}
-.pdescr
-{
-  
-  text-align: center;
-  color: rgb(179, 181, 201);
-  margin-left: 40em;
-  width: 30em;
-  height: 10em;
-  padding-top: 4em;
-  
-  
-}

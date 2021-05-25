@@ -42,7 +42,7 @@ $("document").ready(function () {
             `;
       // $("h3").html("Did not find any results.....Did you mean<br>" + template);
       // $('h3').fadeOut(10000);
-      $("h3").html(template);
+      $("#searchbx").html(template);
       $(window).click(function() {
         $(".temp").hide();
         $("#inp").val("");
@@ -71,15 +71,18 @@ function dispRes(){
       let obj = JSON.parse(this.responseText);
       
       $.each(obj, (key, value)=> {
-        let list = document.getElementById('resList');
+        let list = document.getElementById('searchbx');
         if (value.name.search(expression) != -1) {
-          str += `<li class="ajlis"><img src=${obj[key].img} id="ajimgs">&nbsp&nbsp&nbsp&nbsp<a class="aaj" href=${obj[key].link}>${obj[key].name}</a></li><br>`;
-          list.innerHTML = str;
+          str += `  <img src=${obj[key].img} id="ajimgs">
+                     <a class="aaj" href=${obj[key].link}>${obj[key].name}</a><br>
+                  `;
+          let t=`<div class="aj"> ${str}</div>`;
+          // list.innerHTML = str;
+          $("#searchbx").html(t);
           $(window).click(function() {
-            $(".ajlis").hide();
+            $(".aj").hide();
             $("#inp").val("");
           });
-          
           $(".search").click(function(event){
             event.stopPropagation();
           });
