@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grinder</title>
+</head>
+<body>
 <?php    
     $servername = "localhost";
     $username  = "root";
@@ -28,18 +37,20 @@
                 $q =  $row['qty'];
 
                 if($q >= $quantity){
+                    $totAmt = $quantity*7500;
                     $newQuant = $q - $quantity;
-                    $book = "INSERT INTO orders VALUE('$quantity','BOSCH GWS 2000 ANGLE GRINDER','$name','$address','$pin','$mobile','$email')";
+                    $book = "INSERT INTO orders VALUE('$quantity', '$totAmt','BOSCH GWS 2000 ANGLE GRINDER','$name','$address','$pin','$mobile','$email')";
                     $bookRes = mysqli_query($connect , $book);
                     $update = "UPDATE items  SET qty = '$newQuant' WHERE name='BOSCHGWS2000'";
                     $updateRes = mysqli_query($connect , $update);
-                    echo "Qty : ".$quantity."<br>";
-                    echo "Product : BOSCH GWS 2000 ANGLE GRINDER<br>";
-                    echo "Name : ".$name."<br>";
-                    echo "Address : ".$address."<br>";
-                    echo "Pin : ".$pin."<br>";
-                    echo "Mobile : ".$mobile."<br>";
-                    echo "Email : ".$email."<br>";
+                    echo "<p>Qty : ".$quantity."</p>";
+                    echo "<p>Total Amount: Rs.".$totAmt."</p>";
+                    echo "<p>Product : BOSCH GWS 2000 ANGLE GRINDER</p>";
+                    echo "<p>Name : ".$name."</p>";
+                    echo "<p>Address : ".$address."</p>";
+                    echo "<p>Pin : ".$pin."</p>";
+                    echo "<p>Mobile : ".$mobile."</p>";
+                    echo "<p>Email : ".$email."</p>";
                 }
                 else{
                     echo "The quantity specified is not available!!";
@@ -51,3 +62,16 @@
             echo "<p>ERROR ERROR ERROR</p>";
         }
 ?>
+</body>
+
+<style>
+    body{
+    background: rgb(34, 33, 33);
+    margin-left: 20px;
+    outline: white;
+    font-family:sans-serif;
+    color: rgb(77, 130, 143);
+
+}
+</style>
+</html>

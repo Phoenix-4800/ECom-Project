@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeydew</title>
+</head>
+<body>
+    
 <?php    
     $servername = "localhost";
     $username  = "root";
@@ -29,17 +39,19 @@
 
                 if($q >= $quantity){
                     $newQuant = $q - $quantity;
-                    $book = "INSERT INTO orders VALUE('$quantity','Honeydew Snow Foam Car Wash Liquid 64 Oz','$name','$address','$pin','$mobile','$email')";
+                    $totAmt = $quantity*350;
+                    $book = "INSERT INTO orders VALUE('$quantity', '$totAmt','Honeydew Snow Foam Car Wash Liquid 64 Oz','$name','$address','$pin','$mobile','$email' )";
                     $bookRes = mysqli_query($connect , $book);
                     $update = "UPDATE items  SET qty = '$newQuant' WHERE name='HSFCWL64'";
                     $updateRes = mysqli_query($connect , $update);
-                    echo "Qty : ".$quantity."<br>";
-                    echo "Product : Chemical Guys Honeydew Snow Foam Car Wash Liquid 64 Oz.<br>";
-                    echo "Name : ".$name."<br>";
-                    echo "Address : ".$address."<br>";
-                    echo "Pin : ".$pin."<br>";
-                    echo "Mobile : ".$mobile."<br>";
-                    echo "Email : ".$email."<br>";}
+                    echo "<p>Qty : ".$quantity."</p>";
+                    echo "<p>Total Amount: Rs.".$totAmt."</p>";
+                    echo "<p>Product : Chemical Guys Honeydew Snow Foam Car Wash Liquid 64 Oz.</p>";
+                    echo "<p>Name : ".$name."</p>";
+                    echo "<p>Address : ".$address."</p>";
+                    echo "<p>Pin : ".$pin."</p>";
+                    echo "<p>Mobile : ".$mobile."</p>";
+                    echo "<p>Email : ".$email."</p>";}
                 else{
                     echo "The quantity specified is not available!!";
                 }
@@ -49,4 +61,16 @@
         if($queryResSel===false){
             echo "<p>ERROR ERROR ERROR</p>";
         }
-?>
+?>    
+</body>
+<style>
+    body{
+    background: rgb(34, 33, 33);
+    margin-left: 20px;
+    outline: white;
+    font-family:sans-serif;
+    color: rgb(77, 130, 143);
+
+}
+</style>
+</html>
