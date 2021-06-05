@@ -117,11 +117,11 @@ button,
 #noreslt
 { font-size: 1em;
   font-weight: bold;
-  margin : 2em 0 0 0.7em;
+  margin : 2em 0 0 0.9em;
   color: red;
 }
 .templ, .aaj
-{ font-size: 0.7em;
+{ font-size: 1em;
   color: bisque;
   font-weight: normal;
   padding-left: 1em;
@@ -129,7 +129,7 @@ button,
   
 }
 .templ:hover
-{ font-size: 0.9em;
+{ font-size: 1.2em;
   font-weight: bolder;
 }
 .aj
@@ -150,7 +150,7 @@ button,
 .aaj:hover
 {
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 
 
